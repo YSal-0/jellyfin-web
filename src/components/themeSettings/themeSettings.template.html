@@ -1,0 +1,195 @@
+<form style="margin: 0 auto;">
+
+<!-- 
+    <div class="selectContainer languageSection hide">
+        <select id="selectLanguage" is="emby-select" label="${LabelDisplayLanguage}">
+            <option value="">${Auto}</option>
+            <option value="af">Afrikaans</option>
+            <option value="ar">العربية</option>
+            <option value="be-BY">Беларуская</option>
+            <option value="bg-BG">Български</option>
+            <option value="bn_BD">বাংলা (বাংলাদেশ)</option>
+            <option value="ca">Català</option>
+            <option value="cs">Čeština</option>
+            <option value="cy">Cymraeg</option>
+            <option value="da">Dansk</option>
+            <option value="de">Deutsch</option>
+            <option value="el">Ελληνικά</option>
+            <option value="en-GB">English (United Kingdom)</option>
+            <option value="en-US">English</option>
+            <option value="eo">Esperanto</option>
+            <option value="es">Español</option>
+            <option value="es_419">Español americano</option>
+            <option value="es-AR">Español (Argentina)</option>
+            <option value="es_DO">Español (Dominicana)</option>
+            <option value="es-MX">Español (México)</option>
+            <option value="et">Eesti</option>
+            <option value="eu">Euskara</option>
+            <option value="fa">فارسی</option>
+            <option value="fi">Suomi</option>
+            <option value="fil">Filipino</option>
+            <option value="fr">Français</option>
+            <option value="fr-CA">Français (Canada)</option>
+            <option value="gl">Galego</option>
+            <option value="gsw">Schwiizerdütsch</option>
+            <option value="he">עִבְרִית</option>
+            <option value="hi-IN">हिन्दी</option>
+            <option value="hr">Hrvatski </option>
+            <option value="hu">Magyar</option>
+            <option value="id">Bahasa Indonesia</option>
+            <option value="is-IS">Íslenska</option>
+            <option value="it">Italiano</option>
+            <option value="ja">日本語</option>
+            <option value="kk">Qazaqşa</option>
+            <option value="ko">한국어</option>
+            <option value="lt-LT">Lietuvių</option>
+            <option value="lv">Latviešu</option>
+            <option value="mk">Македонски</option>
+            <option value="ml">മലയാളം</option>
+            <option value="mr">मराठी</option>
+            <option value="ms">Bahasa Melayu</option>
+            <option value="nb">Norsk bokmål</option>
+            <option value="ne">नेपाली</option>
+            <option value="nl">Nederlands</option>
+            <option value="nn">Norsk nynorsk</option>
+            <option value="pa">ਪੰਜਾਬੀ</option>
+            <option value="pl">Polski</option>
+            <option value="pr">Pirate</option>
+            <option value="pt">Português</option>
+            <option value="pt-BR">Português (Brasil)</option>
+            <option value="pt-PT">Português (Portugal)</option>
+            <option value="ro">Românește</option>
+            <option value="ru">Русский</option>
+            <option value="sk">Slovenčina</option>
+            <option value="sl-SI">Slovenščina</option>
+            <option value="sq">Shqip</option>
+            <option value="sr">Српски</option>
+            <option value="sv">Svenska</option>
+            <option value="ta">தமிழ்</option>
+            <option value="te">తెలుగు</option>
+            <option value="th">ภาษาไทย</option>
+            <option value="tr">Türkçe</option>
+            <option value="uk">Українська</option>
+            <option value="ur_PK">اُردُو</option>
+            <option value="vi">Tiếng Việt</option>
+            <option value="zh-CN">汉语 (简化字)</option>
+            <option value="zh-TW">漢語 (繁体字)</option>
+            <option value="zh-HK">廣東話 (香港)</option>
+        </select>
+        <div class="fieldDescription">
+            <div>${LabelDisplayLanguageHelp}</div>
+            <div class="learnHowToContributeContainer hide" style="margin-top: .25em;">
+                <a is="emby-linkbutton" rel="noopener noreferrer" class="button-link" href="https://github.com/jellyfin/jellyfin" target="_blank">${LearnHowYouCanContribute}</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="selectContainer fldDateTimeLocale hide">
+        <select is="emby-select" class="selectDateTimeLocale" label="${LabelDateTimeLocale}">
+            <option value="">${Auto}</option>
+            <option value="af">Afrikaans</option>
+            <option value="ar">العربية</option>
+            <option value="be-BY">Беларуская</option>
+            <option value="bg-BG">Български</option>
+            <option value="bn_BD">বাংলা (বাংলাদেশ)</option>
+            <option value="ca">Català</option>
+            <option value="cs">Čeština</option>
+            <option value="cy">Cymraeg</option>
+            <option value="da">Dansk</option>
+            <option value="de">Deutsch</option>
+            <option value="el">Ελληνικά</option>
+            <option value="en-GB">English (United Kingdom)</option>
+            <option value="en-US">English</option>
+            <option value="eo">Esperanto</option>
+            <option value="es">Español</option>
+            <option value="es_419">Español americano</option>
+            <option value="es-AR">Español (Argentina)</option>
+            <option value="es_DO">Español (Dominicana)</option>
+            <option value="es-MX">Español (México)</option>
+            <option value="et">Eesti</option>
+            <option value="fa">فارسی</option>
+            <option value="fi">Suomi</option>
+            <option value="fil">Filipino</option>
+            <option value="fr">Français</option>
+            <option value="fr-CA">Français (Canada)</option>
+            <option value="gl">Galego</option>
+            <option value="gsw">Schwiizerdütsch</option>
+            <option value="he">עִבְרִית</option>
+            <option value="hi-IN">हिन्दी</option>
+            <option value="hr">Hrvatski </option>
+            <option value="hu">Magyar</option>
+            <option value="id">Bahasa Indonesia</option>
+            <option value="is-IS">Íslenska</option>
+            <option value="it">Italiano</option>
+            <option value="ja">日本語</option>
+            <option value="kk">Qazaqşa</option>
+            <option value="ko">한국어</option>
+            <option value="lt-LT">Lietuvių</option>
+            <option value="lv">Latviešu</option>
+            <option value="mk">Македонски</option>
+            <option value="ml">മലയാളം</option>
+            <option value="mr">मराठी</option>
+            <option value="ms">Bahasa Melayu</option>
+            <option value="nb">Norsk bokmål</option>
+            <option value="ne">नेपाली</option>
+            <option value="nl">Nederlands</option>
+            <option value="nn">Norsk nynorsk</option>
+            <option value="pa">ਪੰਜਾਬੀ</option>
+            <option value="pl">Polski</option>
+            <option value="pr">Pirate</option>
+            <option value="pt">Português</option>
+            <option value="pt-BR">Português (Brasil)</option>
+            <option value="pt-PT">Português (Portugal)</option>
+            <option value="ro">Românește</option>
+            <option value="ru">Русский</option>
+            <option value="sk">Slovenčina</option>
+            <option value="sl-SI">Slovenščina</option>
+            <option value="sq">Shqip</option>
+            <option value="sr">Српски</option>
+            <option value="sv">Svenska</option>
+            <option value="ta">தமிழ்</option>
+            <option value="te">తెలుగు</option>
+            <option value="th">ภาษาไทย</option>
+            <option value="tr">Türkçe</option>
+            <option value="uk">Українська</option>
+            <option value="ur_PK">اُردُو</option>
+            <option value="vi">Tiếng Việt</option>
+            <option value="zh-CN">汉语 (简化字)</option>
+            <option value="zh-TW">漢語 (繁体字)</option>
+            <option value="zh-HK">廣東話 (香港)</option>
+        </select>
+    </div> -->
+
+    <h2 class="sectionTitle">
+        ${Themes}
+    </h2>
+
+
+    <div class="selectContainer">
+        <select id="selectTheme" is="emby-select" label="${LabelTheme}"></select>
+    </div>
+
+    <!-- <div class="checkboxContainer checkboxContainer-withDescription">
+        <label>
+            <input type="checkbox" is="emby-checkbox" id="chkDisableCustomCss" />
+            <span>${DisableCustomCss}</span>
+        </label>
+        <div class="fieldDescription checkboxFieldDescription">${LabelDisableCustomCss}</div>
+    </div>
+
+    <div class="inputContainer customCssContainer">
+        <textarea is="emby-textarea" id="txtLocalCustomCss" label="${LabelCustomCss}" class="textarea-mono"></textarea>
+        <div class="fieldDescription">${LabelLocalCustomCss}</div>
+    </div> -->
+    <div class="checkboxContainer checkboxContainer-withDescription fldBackdrops">
+        <label>
+            <input type="checkbox" is="emby-checkbox" id="chkBackdrops" />
+            <span>${Backdrops}</span>
+        </label>
+        <div class="fieldDescription checkboxFieldDescription">${EnableBackdropsHelp}</div>
+    </div>
+
+    <button is="emby-button" type="submit" class="raised button-submit block btnSave hide">
+        <span>${Save}</span>
+    </button>
+</form>

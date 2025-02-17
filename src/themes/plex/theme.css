@@ -1,4 +1,5 @@
 * {
+    scrollbar-width: thin;
     scrollbar-color: #3b3b3b #202020;
 }
 
@@ -11,7 +12,7 @@ html {
 .wizardStartForm,
 .ui-corner-all,
 .ui-shadow {
-    background-color: #303030;
+    background-color: #101010;
 }
 
 .emby-collapsible-button {
@@ -20,15 +21,22 @@ html {
 }
 
 .skinHeader-withBackground {
-    background: #303030;
-    background: linear-gradient(to right, rgb(41 26 48 / 80%), rgb(3 54 100 / 80%), rgb(1 20 50 / 80%), rgb(20 26 58 / 80%), rgb(41 26 49 / 80%));
+<<<<<<< HEAD:src/themes/light/theme.css
+    background-color: #303030;
+    color: #ccc;
+    color: rgba(255, 255, 255, 0.87);
+}
+
+.osdHeader {
+    box-shadow: none !important;
+=======
+    background-color: #202020;
+>>>>>>> Test:src/themes/plex/theme.css
 }
 
 .skinHeader.semiTransparent {
-    -webkit-backdrop-filter: none !important;
     backdrop-filter: none !important;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .layout-tv .skinHeader.semiTransparent {
@@ -43,27 +51,16 @@ html {
     background-image: url(../../assets/img/icon-transparent.png);
 }
 
+.backgroundContainer,
 .dialog,
 .nowPlayingPlaylist,
 .nowPlayingContextMenu,
 html {
-    background-color: #033361;
-}
-
-.backgroundContainer {
-    background: url(bg.jpg) center top no-repeat #033361;
-    -webkit-background-size: cover;
-    background-size: cover;
+    background-color: #101010;
 }
 
 .backgroundContainer.withBackdrop {
-    opacity: 0.86;
-}
-
-@media (orientation: portrait) {
-    .backgroundContainer {
-        background-position: 30% top;
-    }
+    background-color: rgba(0, 0, 0, 0.86);
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -84,17 +81,13 @@ html {
 
 .fab,
 .raised {
-    background: rgba(0, 0, 0, 0.5);
+    background: #303030;
     color: rgba(255, 255, 255, 0.87);
 }
 
 .fab:focus,
 .raised:focus {
-    background: rgba(0, 0, 0, 0.7);
-}
-
-a[data-role=button] {
-    background: rgba(0, 0, 0, 0.5) !important;
+    background: #383838;
 }
 
 .button-submit {
@@ -140,31 +133,27 @@ a[data-role=button] {
 .formDialogHeader:not(.formDialogHeader-clear),
 .paperList,
 .visualCardBox {
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.layout-tv .formDialogFooter:not(.formDialogFooter-clear) {
-    background-color: transparent;
+    background-color: #202020;
 }
 
 .defaultCardBackground1 {
-    background-color: #213440;
+    background-color: #00455c;
 }
 
 .defaultCardBackground2 {
-    background-color: #8c6565;
+    background-color: #44bae1;
 }
 
 .defaultCardBackground3 {
-    background-color: #57778c;
+    background-color: #00a4db;
 }
 
 .defaultCardBackground4 {
-    background-color: #8c8c49;
+    background-color: #1c4c5c;
 }
 
 .defaultCardBackground5 {
-    background-color: #404024;
+    background-color: #007ea8;
 }
 
 .cardText-secondary,
@@ -188,6 +177,10 @@ a[data-role=button] {
     opacity: 0.5;
 }
 
+.actionSheetMenuItem:hover {
+    background-color: #242424;
+}
+
 .toast {
     background: #303030;
     color: #fff;
@@ -196,16 +189,9 @@ a[data-role=button] {
 
 .appfooter,
 .playlistSectionButton {
-    background: #033664;
+    background: #202020;
     color: #ccc;
     color: rgba(255, 255, 255, 0.78);
-}
-
-@supports (backdrop-filter:blur(10px)) or (-webkit-backdrop-filter:blur(10px)) {
-    .appfooter {
-        background: rgba(1, 2, 50, 0.7);
-        backdrop-filter: blur(20px);
-    }
 }
 
 .itemSelectionPanel {
@@ -236,37 +222,29 @@ a[data-role=button] {
     color: #fff !important;
 }
 
+.detailTableBodyRow-shaded:nth-child(even) {
+    background: #1c1c1c;
+    background: rgba(30, 30, 30, 0.9);
+}
+
 .detailRibbon {
-    background: #303030;
-    background: -webkit-gradient(linear, left top, right top, from(#291a31), color-stop(#033664), color-stop(#011432), color-stop(#141a3a), to(#291a31));
-    background: -webkit-linear-gradient(left, #291a31, #033664, #011432, #141a3a, #291a31);
-    background: -o-linear-gradient(left, #291a31, #033664, #011432, #141a3a, #291a31);
-    background: linear-gradient(to right, #291a31, #033664, #011432, #141a3a, #291a31);
+    background: rgba(32, 32, 32, 0.8);
 }
 
 .layout-tv .detailRibbon {
     background: none;
 }
 
-.detailTableBodyRow-shaded:nth-child(even) {
-    background: #1c1c1c;
-    background: rgba(30, 30, 30, 0.9);
+.noBackdrop .detailRibbon {
+    background: #202020;
 }
 
 .listItem-border {
-    border-color: rgba(255, 255, 255, 0.1) !important;
+    border-color: rgba(34, 34, 34, 0.9) !important;
 }
 
 .listItem:focus {
-    background: rgba(0, 0, 0, 0.3);
-}
-
-.listItem:hover {
-    background: rgba(0, 0, 0, 0.15);
-}
-
-.actionSheetMenuItem:hover {
-    background-color: rgba(0, 0, 0, 0.5);
+    background: #333;
 }
 
 .progressring-spiner {
@@ -289,9 +267,14 @@ a[data-role=button] {
 .emby-input,
 .emby-textarea {
     color: inherit;
-    background: rgba(0, 0, 0, 0.5);
-    border: 0.16em solid transparent;
+<<<<<<< HEAD:src/themes/light/theme.css
+    background: #fff;
+    border: 0.16em solid rgba(0, 0, 0, 0.158);
+=======
+    background: #292929;
+    border: 0.16em solid #292929;
     -webkit-border-radius: 0.2em;
+>>>>>>> Test:src/themes/plex/theme.css
     border-radius: 0.2em;
 }
 
@@ -302,8 +285,8 @@ a[data-role=button] {
 
 .emby-select-withcolor {
     color: inherit;
-    background: rgba(0, 0, 0, 0.5);
-    border: 0.07em solid transparent;
+    background: #292929;
+    border: 0.07em solid #292929;
 }
 
 .emby-select-withcolor > option {
@@ -343,7 +326,6 @@ a[data-role=button] {
 
 .countIndicator,
 .fullSyncIndicator,
-.mediaSourceIndicator,
 .playedIndicator {
     background: #00a4dc;
 }
@@ -352,16 +334,13 @@ a[data-role=button] {
     color: #fff;
 }
 
-.mainDrawer {
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
+.mainDrawer,
 .drawer-open {
-    background-color: #011432;
+    background-color: #101010;
 }
 
 .navMenuOption:hover {
-    background: rgba(221, 221, 221, 0.068);
+    background: #252528;
 }
 
 .navMenuOption-selected {
@@ -379,7 +358,7 @@ a[data-role=button] {
 }
 
 .emby-tab-button-active {
-    color: #00a4dc;
+    color: #fff;
 }
 
 .emby-tab-button.show-focus:focus {
@@ -413,7 +392,7 @@ a[data-role=button] {
 }
 
 .programCell-active {
-    background: rgba(0, 0, 0, 0.4) !important;
+    background: #1e1e1e !important;
 }
 
 .guide-channelHeaderCell:focus,
@@ -450,7 +429,6 @@ a[data-role=button] {
     color: #ddd;
     background: #111;
     padding: 1em;
-    -webkit-border-radius: 0.25em;
     border-radius: 0.25em;
 }
 
@@ -471,21 +449,12 @@ a[data-role=button] {
     color: #00a4dc !important;
 }
 
-.cardBox:not(.visualCardBox) .cardPadder {
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.cardPadder .cardImageIcon {
-    color: rgba(0, 0, 0, 0.5);
-}
-
 .card:focus .cardBox.visualCardBox,
 .card:focus .cardBox:not(.visualCardBox) .cardScalable {
     border-color: #00a4dc !important;
 }
 
 ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
@@ -495,15 +464,19 @@ a[data-role=button] {
 
 .layout-desktop ::-webkit-scrollbar,
 .layout-tv ::-webkit-scrollbar {
-    width: 1em;
-    height: 1em;
+    width: 0.4em;
+    height: 0.4em;
 }
 
 ::-webkit-scrollbar-thumb:horizontal,
 ::-webkit-scrollbar-thumb:vertical {
     border-radius: 2px;
+<<<<<<< HEAD:src/themes/light/theme.css
+    background: center no-repeat #999;
+=======
     -webkit-border-radius: 2px;
     background: center no-repeat #888;
+>>>>>>> Test:src/themes/plex/theme.css
 }
 
 .timeslotHeaders-desktop::-webkit-scrollbar {
@@ -514,17 +487,46 @@ a[data-role=button] {
     color: #00a4dc;
 }
 
+.emby-button.detailFloatingButton {
+    background-color: #00a4dc;
+    color: #fff;
+}
 
-    /*--------------------Translucent Header------------------------------------------*/
-    .skinHeader.skinHeader-withBackground {
-        backdrop-filter: blur(16px);
-       -webkit-backdrop-filter: blur(16px);
-    }
-    
-    .skinHeader.skinHeader-withBackground.osdHeader {
-        backdrop-filter: none;
-    
-    }
+.layout-tv .emby-button.detailFloatingButton:focus {
+    background-color: #f2f2f2;
+    color: #00a4dc;
+}
+/*-------------------------BG Blur------------------------------------------*/
+.backgroundContainer.withBackdrop {
+   background: url(https://i.imgur.com/o144ltn.png) !important;
+}
 
+.backdropContainer {
+    -webkit-backface-visibility: visible;
+    -webkit-perspective: 1000;
+    -webkit-transform: translate3d(0,0,0);
+    -webkit-transform: translateZ(0);
+    backface-visibility: visible;
+    perspective: 1000;
+    transform: translate3d(0,0,0);
+    transform: translateZ(0);
+    -webkit-filter: blur(15px) !important;
+    -moz-filter: blur(15px) !important;
+    -o-filter: blur(15px) !important;
+    -ms-filter: blur(15px) !important;
+    filter: blur(15px) !important;
+}
+/*--------------------Translucent Header------------------------------------------*/
+.skinHeader.skinHeader-withBackground.headroom.noHomeButtonHeader {
+    background:none !important;
+    background-color:rgba(40, 40, 40, .75) !important;
+    backdrop-filter: blur(16px) !important;
+   -webkit-backdrop-filter: blur(16px) !important;
+}
 
-    
+.skinHeader-withBackground{
+    background:none !important;
+    background-color:rgba(40, 40, 40, .75) !important;
+    backdrop-filter: blur(16px) !important;
+   -webkit-backdrop-filter: blur(16px) !important;
+}

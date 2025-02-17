@@ -90,11 +90,6 @@ html {
     background: rgba(0, 0, 0, 0.24);
 }
 
-a[data-role=button] {
-    background: #fff !important;
-    background: rgba(0, 0, 0, 0.14) !important;
-}
-
 .button-submit {
     background: #00a4dc;
     color: #fff;
@@ -160,6 +155,11 @@ a[data-role=button] {
     background-color: #f57f17;
 }
 
+.formDialogFooter:not(.formDialogFooter-clear) {
+    border-top: 1px solid #ddd;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
 .cardText-secondary,
 .fieldDescription,
 .guide-programNameCaret,
@@ -190,14 +190,13 @@ a[data-role=button] {
     color: #fff;
 }
 
+.actionSheetMenuItem:hover {
+    background-color: #ddd;
+}
+
 .toast {
     background: #303030;
     color: rgba(255, 255, 255, 0.87);
-}
-
-.formDialogFooter:not(.formDialogFooter-clear) {
-    border-top: 1px solid #ddd;
-    border-top: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .appfooter,
@@ -206,12 +205,6 @@ a[data-role=button] {
     color: rgba(0, 0, 0, 0.7);
     background: #303030;
     background: linear-gradient(to right, #bcbcbc, #a7b4b7, #beb5a5, #adbec2, #b9c7cb);
-}
-
-.layout-tv .formDialogFooter:not(.formDialogFooter-clear) {
-    border: none;
-    color: initial;
-    background: none;
 }
 
 .nowPlayingBarSecondaryText {
@@ -252,10 +245,6 @@ a[data-role=button] {
     background: none;
 }
 
-.noBackdropTransparency .detailPageSecondaryContainer {
-    background-color: #d5e9f2;
-}
-
 .detailTableBodyRow-shaded:nth-child(even) {
     background: #f8f8f8;
     background: rgba(0, 0, 0, 0.1);
@@ -267,14 +256,6 @@ a[data-role=button] {
 
 .listItem:focus {
     background: rgba(0, 0, 0, 0.2);
-}
-
-.listItem:hover {
-    background: rgba(0, 0, 0, 0.1);
-}
-
-.actionSheetMenuItem:hover {
-    background-color: #ddd;
 }
 
 .progressring-spiner {
@@ -352,7 +333,6 @@ a[data-role=button] {
 
 .countIndicator,
 .fullSyncIndicator,
-.mediaSourceIndicator,
 .playedIndicator {
     background: #00a4dc;
 }
@@ -474,10 +454,6 @@ a[data-role=button] {
 
 .buttonActive {
     color: #00a4dc !important;
-}
-
-.cardPadder .cardImageIcon {
-    color: rgba(0, 0, 0, 0.1);
 }
 
 .card:focus .cardBox.visualCardBox,

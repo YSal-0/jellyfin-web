@@ -87,10 +87,6 @@ html {
     background: #143451;
 }
 
-a[data-role=button] {
-    background: #082845 !important;
-}
-
 .button-submit {
     background: #00a4dc;
     color: #fff;
@@ -190,11 +186,6 @@ a[data-role=button] {
     color: rgba(255, 255, 255, 0.78);
 }
 
-.layout-tv .formDialogFooter:not(.formDialogFooter-clear) {
-    background: transparent;
-    color: initial;
-}
-
 .itemSelectionPanel {
     border: 1px solid #00a4dc;
 }
@@ -228,12 +219,6 @@ a[data-role=button] {
     background: none;
 }
 
-.noBackdropTransparency .detailPageSecondaryContainer {
-    background: linear-gradient(to bottom, #0f3562, #1162a4, #03215f);
-    background-color: #0f3562;
-    background-attachment: fixed;
-}
-
 .detailTableBodyRow-shaded:nth-child(even) {
     background: #1c1c1c;
     background: rgba(0, 0, 0, 0.3);
@@ -244,11 +229,7 @@ a[data-role=button] {
 }
 
 .listItem:focus {
-    background: rgba(0, 0, 0, 0.2);
-}
-
-.listItem:hover {
-    background: rgba(0, 0, 0, 0.4);
+    background: #333;
 }
 
 .progressring-spiner {
@@ -321,7 +302,6 @@ a[data-role=button] {
 
 .countIndicator,
 .fullSyncIndicator,
-.mediaSourceIndicator,
 .playedIndicator {
     background: #00a4dc;
 }
@@ -451,10 +431,6 @@ a[data-role=button] {
 
 .cardBox:not(.visualCardBox) .cardPadder {
     background-color: #0f3562;
-}
-
-.cardPadder .cardImageIcon {
-    color: rgba(0, 0, 0, 0.4);
 }
 
 .card:focus .cardBox.visualCardBox,

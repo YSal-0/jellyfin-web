@@ -103,13 +103,11 @@ progress::-webkit-progress-value {
     background: #ff77f1;
 }
 
-div[data-role=controlgroup] .controlGroupButton.ui-btn-active,
 div[data-role=controlgroup] a.ui-btn-active {
     background: #55828b !important;
     color: #e1e5f2 !important;
 }
 
-.controlGroupButton,
 a[data-role=button] {
     background: rgba(2, 43, 58, 0.521) !important;
 }
@@ -221,17 +219,17 @@ a[data-role=button] {
     border-radius: 0.8em;
 }
 
-.layout-tv .formDialogFooter:not(.formDialogFooter-clear) {
-    background-color: transparent;
-    border-radius: 0;
-}
-
 .cardOverlayContainer {
     border-radius: 0.8em;
 }
 
 .blurhash-canvas {
     border-radius: 0.8em;
+}
+
+.visualCardBox .cardOverlayContainer {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
 }
 
 .defaultCardBackground1 {
@@ -273,6 +271,10 @@ a[data-role=button] {
 .cardFooter-vibrant .cardText-secondary {
     color: inherit;
     opacity: 0.5;
+}
+
+.actionSheetMenuItem:hover {
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .toast {
@@ -326,12 +328,6 @@ a[data-role=button] {
     background: none;
 }
 
-.noBackdropTransparency .detailPageSecondaryContainer {
-    background: url(bg.jpg) center top no-repeat #030322;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
 .detailTableBodyRow-shaded:nth-child(even) {
     background: #1c1c1c;
     background: rgba(30, 30, 30, 0.9);
@@ -343,14 +339,6 @@ a[data-role=button] {
 
 .listItem:focus {
     background: rgba(0, 0, 0, 0.3);
-}
-
-.listItem:hover {
-    background: #12122f;
-}
-
-.actionSheetMenuItem:hover {
-    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .progressring-spiner {
@@ -430,7 +418,6 @@ a[data-role=button] {
 
 .countIndicator,
 .fullSyncIndicator,
-.mediaSourceIndicator,
 .playedIndicator {
     background: rgb(12, 232, 214);
 }
@@ -577,10 +564,6 @@ a[data-role=button] {
     border-radius: 0.8em;
 }
 
-.cardPadder .cardImageIcon {
-    color: rgba(0, 0, 0, 0.5);
-}
-
 .card:focus .cardBox.visualCardBox,
 .card:focus .cardBox:not(.visualCardBox) .cardScalable {
     border-color: #ff77f1 !important;
@@ -652,4 +635,14 @@ a[data-role=button] {
     padding-bottom: 100%;
     contain: strict;
     border-radius: 50% !important;
+}
+/*--------------------Translucent Header------------------------------------------*/
+.skinHeader.skinHeader-withBackground.headroom.noHomeButtonHeader {
+    backdrop-filter: blur(16px);
+   -webkit-backdrop-filter: blur(16px);
+}
+
+.skinHeader.skinHeader-withBackground.headroom {
+    backdrop-filter: blur(16px);
+   -webkit-backdrop-filter: blur(16px);
 }

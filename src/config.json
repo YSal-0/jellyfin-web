@@ -3,18 +3,30 @@
   "multiserver": false,
   "themes": [
     {
+      "name": "Hint of Green",
+      "id": "hintofgreen",
+      "color": "#00000000"
+    },{
+      "name": "Netflix",
+      "id": "netflix",
+      "color": "#202020"
+    },{
+      "name": "Plex",
+      "id": "plex",
+      "color": "#202020"
+    },{
       "name": "Apple TV",
       "id": "appletv",
       "color": "#bcbcbc"
     }, {
       "name": "Blue Radiance",
       "id": "blueradiance",
-      "color": "#011432"
+      "color": "#011432",
+      "default": true
     }, {
       "name": "Dark",
       "id": "dark",
-      "color": "#202020",
-      "default": true
+      "color": "#202020"
     }, {
       "name": "Light",
       "id": "light",

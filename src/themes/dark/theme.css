@@ -126,10 +126,6 @@ html {
     background-color: #202020;
 }
 
-.layout-tv .formDialogFooter:not(.formDialogFooter-clear) {
-    background-color: transparent;
-}
-
 .defaultCardBackground1 {
     background-color: #00455c;
 }
@@ -169,6 +165,10 @@ html {
 .cardFooter-vibrant .cardText-secondary {
     color: inherit;
     opacity: 0.5;
+}
+
+.actionSheetMenuItem:hover {
+    background-color: #242424;
 }
 
 .toast {
@@ -225,8 +225,8 @@ html {
     background: none;
 }
 
-.noBackdropTransparency .detailPageSecondaryContainer {
-    background-color: #101010;
+.noBackdrop .detailRibbon {
+    background: #202020;
 }
 
 .listItem-border {
@@ -235,10 +235,6 @@ html {
 
 .listItem:focus {
     background: #333;
-}
-
-.listItem:hover {
-    background: #242424;
 }
 
 .progressring-spiner {
@@ -314,7 +310,6 @@ html {
 
 .countIndicator,
 .fullSyncIndicator,
-.mediaSourceIndicator,
 .playedIndicator {
     background: #00a4dc;
 }
@@ -519,5 +514,18 @@ html {
 
 #dialogToc .toc li a:active,
 #dialogToc .toc li a:hover {
-    color: #00a4dc;
+    color: #00a4dc;}
+
+    /*--------------------Translucent Header------------------------------------------*/
+ .skinHeader.skinHeader-withBackground {
+    backdrop-filter: blur(16px);
+   -webkit-backdrop-filter: blur(16px);
+}
+
+.skinHeader.skinHeader-withBackground.osdHeader {
+    backdrop-filter: none;
+
+}
+.skinHeader-withBackground {
+    background-color: rgb(16 11 8 / 87%);
 }

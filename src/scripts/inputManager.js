@@ -108,6 +108,9 @@ export function handleCommand(commandName, options) {
         'settings': () => {
             appRouter.showSettings();
         },
+        'themes': () => {
+            appRouter.showThemes();
+        },
         'back': () => {
             if (appRouter.canGoBack()) {
                 appRouter.back();

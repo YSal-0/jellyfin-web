@@ -252,6 +252,10 @@ class AppRouter {
             return '#/mypreferencesmenu.html';
         }
 
+        if (item === 'themes') {
+            return '#/mypreferencesthemes.html';
+        }
+
         if (item === 'wizard') {
             return '#/wizardstart.html';
         }
@@ -478,6 +482,10 @@ class AppRouter {
 
     showSettings() {
         return this.show('mypreferencesmenu.html');
+    }
+
+    showThemes() {
+        return this.show('mypreferencesthemes.html');
     }
 
     showNowPlaying() {

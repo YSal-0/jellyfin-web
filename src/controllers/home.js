@@ -29,6 +29,8 @@ class HomeView extends TabbedView {
             name: globalize.translate('Home')
         }, {
             name: globalize.translate('Favorites')
+        }, {
+            name: 'Requests', target: '_blank', rel: 'noopener noreferrer', href: 'https://req.reelruns.com/'
         }];
     }
 
@@ -46,6 +48,10 @@ class HomeView extends TabbedView {
 
             case 1:
                 depends = 'favorites';
+                break;
+
+            case 2:
+                depends = 'requests';
         }
 
         const instance = this;

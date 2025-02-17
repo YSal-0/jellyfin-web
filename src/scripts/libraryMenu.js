@@ -42,6 +42,7 @@ function renderHeader() {
     html += '<h3 class="pageTitle" aria-hidden="true"></h3>';
     html += '</div>';
     html += '<div class="headerRight">';
+    html += '<button is="paper-icon-button-light" class="headerThemeButton headerButton headerButtonRight hide"><span class="material-icons brush" aria-hidden="true"></span></button>';
     html += '<button is="paper-icon-button-light" class="headerSyncButton syncButton headerButton headerButtonRight hide"><span class="material-icons groups" aria-hidden="true"></span></button>';
     html += '<span class="headerSelectedPlayer"></span>';
     html += '<button is="paper-icon-button-light" class="headerAudioPlayerButton audioPlayerButton headerButton headerButtonRight hide"><span class="material-icons music_note" aria-hidden="true"></span></button>';
@@ -68,6 +69,7 @@ function renderHeader() {
     headerAudioPlayerButton = skinHeader.querySelector('.headerAudioPlayerButton');
     headerSearchButton = skinHeader.querySelector('.headerSearchButton');
     headerSyncButton = skinHeader.querySelector('.headerSyncButton');
+    headerThemeButton = skinHeader.querySelector('.headerThemeButton');
     currentTimeText = skinHeader.querySelector('.currentTimeText');
 
     retranslateUi();
@@ -110,6 +112,10 @@ function retranslateUi() {
 
     if (headerSyncButton) {
         headerSyncButton.title = globalize.translate('ButtonSyncPlay');
+    }
+
+    if (headerThemeButton) {
+        headerThemeButton.title = ('Themes');
     }
 
     if (headerAudioPlayerButton) {
@@ -155,6 +161,10 @@ function updateUserInHeader(user) {
             headerHomeButton.classList.remove('hide');
         }
 
+        if (headerThemeButton) {
+            headerThemeButton.classList.remove('hide');
+        }
+
         if (headerSearchButton) {
             headerSearchButton.classList.remove('hide');
         }
@@ -177,6 +187,7 @@ function updateUserInHeader(user) {
         }
     } else {
         headerHomeButton.classList.add('hide');
+        headerThemeButton.classList.add('hide');
         headerCastButton.classList.add('hide');
         headerSyncButton.classList.add('hide');
 
@@ -221,6 +232,10 @@ function onHeaderHomeButtonClick() {
     Dashboard.navigate('home.html');
 }
 
+function onHeaderThemeButtonClick() {
+    Dashboard.navigate('mypreferencesthemes.html');
+}
+
 function showAudioPlayer() {
     return appRouter.showNowPlaying();
 }
@@ -240,6 +255,7 @@ function bindMenuEvents() {
 
     headerUserButton.addEventListener('click', onHeaderUserButtonClick);
     headerHomeButton.addEventListener('click', onHeaderHomeButtonClick);
+    headerThemeButton.addEventListener('click', onHeaderThemeButtonClick);
 
     if (!layoutManager.tv) {
         headerCastButton.addEventListener('click', onCastButtonClicked);
@@ -695,6 +711,7 @@ let headerCastButton;
 let headerSearchButton;
 let headerAudioPlayerButton;
 let headerSyncButton;
+let headerThemeButton;
 let currentTimeText;
 const enableLibraryNavDrawer = layoutManager.desktop;
 const enableLibraryNavDrawerHome = !layoutManager.tv;

@@ -116,6 +116,11 @@ export function setTabs(view, selectedIndex, getTabsFn, getTabContainersFn, onBe
                 tabClass += ' ' + t.cssClass;
             }
 
+            //accomodate links in tabs
+            if (t.target) {
+                tabClass += '" target="' + t.target;
+            }
+
             if (t.href) {
                 tabHtml = '<a href="' + t.href + '" is="emby-linkbutton" class="' + tabClass + '" data-index="' + index + '"><div class="emby-button-foreground">' + t.name + '</div></a>';
             } else {

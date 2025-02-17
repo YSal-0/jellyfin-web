@@ -1,9 +1,9 @@
 {
-    "name": "Jellyfin",
-    "description": "The Free Software Media System",
+    "name": "Salyani Media Server",
+    "description": "Entertainment, Media, and Memories",
     "lang": "en-US",
-    "short_name": "Jellyfin",
-    "start_url": "index.html#/home.html",
+    "short_name": "SMS",
+    "start_url": "index.html#!/home.html",
     "theme_color": "#101010",
     "background_color": "#101010",
     "display": "standalone",

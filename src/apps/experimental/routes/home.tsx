@@ -47,6 +47,8 @@ const Home = () => {
             name: globalize.translate('Home')
         }, {
             name: globalize.translate('Favorites')
+        }, {
+            name: globalize.translate('Requests'), target: '_blank', rel: 'noopener noreferrer', href: 'https://req.reelruns.com/'
         }];
     };
 
@@ -68,6 +70,10 @@ const Home = () => {
 
             case 1:
                 depends = 'favorites';
+                break;
+
+            case 2:
+                depends = 'requests';
         }
 
         return import(/* webpackChunkName: "[request]" */ `../../../controllers/${depends}`).then(({ default: ControllerFactory }) => {
@@ -173,6 +179,9 @@ const Home = () => {
                     <div className='sections'></div>
                 </div>
                 <div className='tabContent pageTabContent' id='favoritesTab' data-index='1'>
+                    <div className='sections'></div>
+                </div>
+                <div className='tabContent pageTabContent' id='requestsTab' data-index='2'>
                     <div className='sections'></div>
                 </div>
             </Page>
