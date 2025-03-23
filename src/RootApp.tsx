@@ -22,9 +22,9 @@ const RootApp = () => (
                 </WebConfigProvider>
             </UserSettingsProvider>
         </ApiProvider>
-        {useReactQueryDevtools && (
+        {/*useReactQueryDevtools && (
             <ReactQueryDevtools initialIsOpen={false} />
-        )}
+        )*/}
     </QueryClientProvider>
 );
 
